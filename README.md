@@ -1,13 +1,17 @@
 # GrapesJS Firestore
 
-GrapesJS storage wrapper for [Cloud Firestore](https://firebase.google.com/docs/firestore), flexible, scalable NoSQL cloud database to store and sync data for client/server-side development.
+Fork of GrapesJS storage wrapper for [Cloud Firestore](https://firebase.google.com/docs/firestore), flexible, scalable NoSQL cloud database to store and sync data for client/server-side development.
+
+Uses Firestore update method instead of set method for updating documents.
+
+
 
 > Requires GrapesJS v0.14.15 or higher
 
 
 ## Summary
 
-* Plugin name: `grapesjs-firestore`
+* Plugin name: `grapesjs-firestore-update`
 * Storage
   * `firestore`
 
@@ -33,12 +37,8 @@ GrapesJS storage wrapper for [Cloud Firestore](https://firebase.google.com/docs/
 
 ## Download
 
-* CDN
-  * `https://unpkg.com/grapesjs-firestore`
 * NPM
-  * `npm i grapesjs-firestore`
-* GIT
-  * `git clone https://github.com/artf/grapesjs-firestore.git`
+  * `npm i grapesjs-firestore-update`
 
 
 
@@ -51,7 +51,7 @@ Before start using this plugin you have to create and enable Cloud Firestore pro
 ```html
 <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
 <script src="https://unpkg.com/grapesjs"></script>
-<script src="path/to/grapesjs-firestore.min.js"></script>
+<script src="path/to/grapesjs-firestore-update.min.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
@@ -87,8 +87,8 @@ To get more about the Firestore security checkout [this guide](https://firebase.
 Clone the repository
 
 ```sh
-$ git clone https://github.com/artf/grapesjs-firestore.git
-$ cd grapesjs-firestore
+$ git clone https://github.com/PaulEvers/grapesjs-firestore
+$ cd grapesjs-firestore-update
 ```
 
 Install dependencies

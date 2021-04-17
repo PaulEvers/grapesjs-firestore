@@ -85,7 +85,7 @@ export default grapesjs.plugins.add('grapesjs-firestore', (editor, opts = {}) =>
 
     store(data, clb, clbError) {
       getAsyncDoc(doc => {
-        doc.set(data)
+        doc.update(data)
         .then(clb)
         .catch(clbError);
       });
